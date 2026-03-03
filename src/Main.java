@@ -25,5 +25,7 @@ public class Main {
         System.out.println("\nLista de entrenadores: " + "\n" + centroDeportivo1.mostrarEntrenadores());
         System.out.println("\n");
         System.out.println("El número de entrenadores en el centro deportivo  es: " + centroDeportivo1.contarEntrenadores());
+
+        System.out.println("El entrenador " +centroDeportivo1.deleteEntrenador(entrenador1) + "ha sido eliminado");
     }
 }
