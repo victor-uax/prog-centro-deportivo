@@ -64,5 +64,22 @@ public class CentroDeportivo {
         return primerHuecoLibre;
     }
 
+    /**
+     * Este metodo registra el Entrenador recibido, para ello comprueba primero si hay hueco libre para él y si lo hay comprueba que no esté registrado ya
+     * @param entrenador
+     * @return true si ha podido ser registrado correctamente o false si no ha podido ser registrado
+     */
+    public boolean registrarEntrenador(Entrenador entrenador){
+        int primerHuecoLibre = buscarPrimerHuecoLibre();
+        boolean entrenadorRegistrado = false;
+
+        if( primerHuecoLibre >= 0 ){
+            if( buscarEntrenador(entrenador.getId()) == null ){
+                entrenadores[buscarPrimerHuecoLibre()] = entrenador;
+                entrenadorRegistrado = true;
+            }
+        }
+        return entrenadorRegistrado;
+    }
 
 }
