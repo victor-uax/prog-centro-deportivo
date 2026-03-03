@@ -22,8 +22,8 @@ public class Main {
         System.out.println(centroDeportivo1.registrarEntrenador(entrenador8));
         System.out.println(centroDeportivo1.registrarEntrenador(entrenador9));
 
-        System.out.println(centroDeportivo1.mostrarEntrenadores());
-
-        System.out.println(centroDeportivo1.contarEntrenadores());
+        System.out.println("\nLista de entrenadores: " + "\n" + centroDeportivo1.mostrarEntrenadores());
+        System.out.println("\n");
+        System.out.println("El número de entrenadores en el centro deportivo  es: " + centroDeportivo1.contarEntrenadores());
     }
 }
