@@ -57,10 +57,10 @@ public class Entrenador {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Entrenador{");
-        sb.append("id: %d");
-        sb.append(" , nombre: %s");
-        sb.append(" , especialidad: %s");
-        sb.append(" , aniosExperiencia: %d");
+        sb.append(String.format("\n id:  %d;", this.id));
+        sb.append(String.format(" nombre:  %s;", this.nombre));
+        sb.append(String.format(" especialidad:  %s;", this.especialidad));
+        sb.append(String.format(" años de experiencia:  %d;", this.aniosExperiencia));
         sb.append('}');
 
         return sb.toString();
