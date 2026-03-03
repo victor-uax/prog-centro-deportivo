@@ -2,20 +2,25 @@ public class CentroDeportivo {
 
     // atributos de la clase CentroDeportivo
     private Entrenador[] entrenadores;
-    private final int MAX_ENTRENADORES;
+    private final int NUM_MAX_ENTRENADORES;
 
     // constructor de la clase CentroDeportivo
     public CentroDeportivo(int cantidad_maxima_entrenadores) {
-        MAX_ENTRENADORES = cantidad_maxima_entrenadores;
+
+        this.NUM_MAX_ENTRENADORES = comprobarCantidadEntrenadores(cantidad_maxima_entrenadores);
+
 
     }
 
-    private boolean comprobarCantidadEntrenadores(int cantidad_maxima_entrenadores){
-        boolean entrenadoresMayorQueCero = false;
+    private int comprobarCantidadEntrenadores(int cantidad_maxima_entrenadores){
+        int cantidadFinal;
 
         if( cantidad_maxima_entrenadores > 0){
-            entrenadoresMayorQueCero = true;
+            cantidadFinal = cantidad_maxima_entrenadores;
+        }else{
+            cantidadFinal = 15;
         }
-        return entrenadoresMayorQueCero;
+        cantidadFinal = cantidad_maxima_entrenadores;
+        return cantidad_maxima_entrenadores;
     }
 }
