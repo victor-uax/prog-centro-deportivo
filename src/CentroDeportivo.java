@@ -100,6 +100,10 @@ public class CentroDeportivo {
         return sb.toString();
     }
 
+    /**
+     * Metodo que cuenta los entrenadores
+     * @return int contadorDeEntrenadores
+     */
     public int contarEntrenadores(){
         int contadorDeEntrenadores = 0;
 
