@@ -99,4 +99,15 @@ public class CentroDeportivo {
         return sb.toString();
     }
 
+    public int contarEntrenadores(){
+        int contadorDeEntrenadores = 0;
+
+        for( int i = 0; i < NUM_MAX_ENTRENADORES; i++ ){
+            if( entrenadores[i] != null){
+                contadorDeEntrenadores++;
+            }
+        }
+        return contadorDeEntrenadores;
+    }
+
 }
