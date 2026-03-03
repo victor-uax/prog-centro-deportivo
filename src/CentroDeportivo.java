@@ -9,6 +9,7 @@ public class CentroDeportivo {
 
         this.NUM_MAX_ENTRENADORES = comprobarCantidadEntrenadores(cantidad_maxima_entrenadores);
 
+        entrenadores = new Entrenador[NUM_MAX_ENTRENADORES];
 
     }
 
@@ -109,5 +110,4 @@ public class CentroDeportivo {
         }
         return contadorDeEntrenadores;
     }
-
 }
