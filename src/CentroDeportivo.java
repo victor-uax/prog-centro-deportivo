@@ -82,4 +82,21 @@ public class CentroDeportivo {
         return entrenadorRegistrado;
     }
 
+    /**
+     * Muestra la información de los Entrenadores de cada posición del array entrenadores siempre que la posición no esté vacía
+     * @return String con toda la información de los Entrenadores
+     */
+    public String mostrarEntrenadores(){
+        StringBuilder sb = new StringBuilder();
+
+        for( int i = 0; i < NUM_MAX_ENTRENADORES; i++ ){
+            if( entrenadores[i] != null){
+
+                entrenadores[i].toString();
+                sb.append(entrenadores[i].toString());
+            }
+        }
+        return sb.toString();
+    }
+
 }
